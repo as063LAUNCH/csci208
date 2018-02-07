@@ -1,0 +1,94 @@
+;"Bash Lab, csci208, 2016"
+; Anushikha Sharma
+
+Problem 2
+/home/accounts/student/a/as063/csci208/labs/BashA
+
+Problem 3
+part 1 - student 
+part 2 - The date is when the file was last modified
+
+Problem 4
+labs
+
+Problem 5
+part 1 - I was in BashA and I had my handin.txt file. I copied it in the same folder using cp handin handincopy
+part 2 - cp ~/csci208/file1.txt labs/BashA/file2.txt
+part 3 - cp ~/csci208/file1.txt ./file2.txt
+part 4 - cp ~/csci208/file1.txt ~
+part 5 - cp ~/csci208/file1.txt .
+
+Problem 6
+part 1- rm file1
+part 2- rm -r hw1
+
+Problem 7
+part 1- mv file1.txt file2.txt
+part 2- mv ~/csci208/labs/BashA/handincopy labs/file3.txt
+
+Problem 8
+part 1- 
+ 1058  rm file1.txt
+ 1059  rm file2
+ 1060  rm -r hw(copy)
+ 1061  rm -r hw (copy)
+ 1062  rm -r hw1
+ 1063  mv ~/csci208/labs/BashA/file2 ~
+ 1064  mv ~/csci208/labs/BashA/file2.txt ~
+ 1065  mv ~/csci208/labs/BashA/file2.txt ~/file3.txt
+ 1066  mv ~/csci208/labs/BashA/file2.txt labs/file3.txt
+ 1067  mv ~/csci208/labs/BashA/handincopy.txt labs/file3.txt
+ 1068  mv ~/csci208/labs/BashA/handincopy labs/file3.txt
+
+part 2- !c
+
+Problem 9
+part 1- (drwx--x--x)
+part 2- (-rw-------)
+part 3- (drwx--x--x)
+part 4- (--wxrwx--x)
+
+Problem 10
+part 1- 
+chmod u-rw Alpha (You can't read or write to the file)
+chmod g+r Alpha (The group can read it)
+chmod o+w Alpha (The rest of the world can write to it)
+
+part 2- 
+No, it doesn't mean that you get them anyway. The Alpha file is still not readable or writable by the user even if the group can read and write on it. 
+
+part 3- 
+Yes, now that we've changed the settings for Alpha where the group can read, write and execute others should be able to write to my Alpha file. 
+
+Problem 11
+There are 5 differences between example1.txt example2.txt
+1c1,3 - line 1 in example1.txt was changed to lines 1 through 3 in example2.txt
+3a6,7 - line 3 in example1.txt was added to lines 6 through 7 in example2.txt
+9c13,14 -line 9 in example1.txt was changed to lines 13 through 14 in example2.txt
+41c46,48 - line 41 in example1.txt was changed to lines 46 through 48 in example2.txt
+48c55 - line 48 in example1.txt was changed to lines 55 in example2.txt
+
+Problem 12
+diff example1.txt example2.txt > diffs
+ls >> diffs
+
+Problem 13
+cat example1.txt example2.txt more.txt
+
+Problem 14
+part 1- alias a2ps='print'
+part 2- rm -i
+part 3- GNU C Compiler
+
+Problem 15
+tar -cjvf 203.tbz 203
+tar -cjvf csci204.tbz csci204
+
+
+ 
+
+
+
+
+ 
+

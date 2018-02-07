@@ -1,0 +1,42 @@
+file1.txt c
+done
+file1.txt b
+done
+file1.txt a
+done
+file1.txt cb
+done
+file1.txt ca
+done
+file1.txt ba
+done
+file1.txt cba
+done
+file1.txt c
+done
+file1.txt b
+done
+file1.txt a
+done
+file1.txt cb
+done
+file1.txt ca
+done
+file1.txt ba
+done
+file1.txt cba
+done
+file1.txt c
+done
+file1.txt b
+done
+file1.txt a
+done
+file1.txt cb
+done
+file1.txt ca
+done
+file1.txt ba
+done
+file1.txt cba
+done

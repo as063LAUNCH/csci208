@@ -1,0 +1,34 @@
+//Anushikha Sharma
+//CSCI208 - Thursday 1pm-3pm
+//Prof. Razet
+//Lab - CppB
+//Problem 5
+
+#include <iostream>
+using namespace std;
+class Imag{
+public:
+  void add();
+  void multiply(int n);
+private:
+  string fruit = "Apple: ";
+  int value = 7;
+};
+void Pb2::print(){
+  cout << fruit  << value << endl;
+}
+void Pb2::change(int n){
+  value = n;
+}
+
+int main(){
+Imag n1 = Imag(0.3, 0.2);
+Imag n2 = Imag(0.6, 0.75);
+cout << n1 << endl;
+cout << n2 << endl;
+cout << "n1 + n2 = " << (n1+n2) << endl;
+cout << "n1 * n2 = " << (n1*n2) << endl;
+cout << "n1 * n1 * n1 * n1 = " << (n1 * n1 * n1 * n1) << endl;
+}
+
+

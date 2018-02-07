@@ -1,0 +1,76 @@
+//Anushika Sharma and Cristal Hermosillo
+//Csci208
+//CppB Lab
+//
+
+
+#include <iostream>
+
+using namespace std;
+
+class Clown{
+    public:
+        //void setname(string name);
+        Clown(string name);
+        void dance() {cout << name <<" twirls like a ballerina\n"<< endl;}
+};
+
+void Clown:: setname( string name){
+    name = name;
+};
+
+class CircusClown: public Clown{
+    public:
+        CircusClown(string name);
+        void dance() { cout << name <<" hops up and down\n" << endl;}
+};
+
+int main(){
+    Clown carl("carl");
+    carl.dance();
+    
+    CircusClown joe("joe");
+
+    Clown bob("bob");
+    
+    
+}
+
+
+#include <iostream>
+using namespace std;
+
+class Clown {
+public:
+  string name;
+  Clown(string clownName) {
+    this->name = clownName;
+  };
+
+  void dance() {
+    cout << name << " twirls like a ballerina." << endl;
+  }
+};
+
+class CircusClown: public Clown {
+public:
+  CircusClown(string clownName): Clown(clownName){};
+
+  void dance() {
+    cout << name << " hops up and down." << endl;
+  }
+};
+
+  int main() {
+    Clown carl = Clown("Carl");
+    carl.dance();
+
+    CircusClown joe = CircusClown("Joe");
+    joe.dance();
+    
+    Clown bob = CircusClown("Bob");
+    bob.dance();
+    
+    Clown joeJr = (Clown) joe;
+    joeJr.dance();
+  }

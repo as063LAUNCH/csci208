@@ -1,0 +1,39 @@
+#Anushikha Sharma and Cristal Hermosillo
+#Bash B
+
+#!/bin/bash
+
+a=${1} #This is	a command
+b=${2} #This is	also a set of arguments
+c=${3} #This is	a file extension
+d=${4} #This is	a folder name
+
+
+#if the given folder does not exist, create it
+if [[ ! -d ${d} ]]; then
+	mkdir -p $d	
+fi
+
+#if the given folder is not a directory, quit 
+if [[ -d ${d} ]]; then
+	echo "${d} exists and is a folder."
+
+else
+	echo "${d} is NOT a folder. Please input a folder."
+fi
+
+#if the script is called with the wrong number of inputs, quit
+if [[ ${#} -ne 4 ]]; then
+    echo "not enough arguments. Please insert a command, a set of arguments, a file extension and a folder in that order."
+fi
+   
+#run the command on a combination of all the arguments on all the files in the current folder that has an extension
+
+for file in *.${c};do
+   for j in `python pythonBashB.py ${b}`; do  
+       ./myCmd.sh ${j} ${file##*/} >> $d/${file##*/}
+   done
+done
+
+exit
+

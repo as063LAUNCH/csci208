@@ -1,0 +1,38 @@
+!/bin/bash
+x="Please give me two numbers to compare, a file name, and a folder name."
+echo ${x}
+
+a=${1} #This is	a number.
+b=${2} #This is	also a number.
+c=${3} #This is	a file name.
+d=${4} #This is	a folder name.
+
+echo ${b}
+
+if [[ ${a} -gt ${b} ]]; then
+	echo "${a} is bigger than ${b}."
+else
+	echo "${b} is bigger than ${a}."
+fi
+
+if [[ -f ${c} ]]; then
+	echo "${c} exists and is a file name."
+else
+	echo "${c} is NOT a file name. Please input a file name."
+fi
+
+if [[ -d ${d} ]]; then
+	echo "${d} exists and is a file folder."
+else
+	echo "${d} is NOT a file folder. Please input a file folder."
+fi
+
+for file in "${d}/*.jar 2> /dev/null"; do # for each file in file folder named something.jar
+	echo ${file} #echo its name
+done
+
+j="./myScript ${a} ${b} ${c} ${d}"
+echo ${j} >> handin.txt
+echo ./myScript >> handin.txt
+
+exit
