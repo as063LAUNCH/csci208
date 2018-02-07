@@ -1,0 +1,83 @@
+//Anushikha Sharma - CSCI208 Lab - PrologA
+-------------------------------
+Sample Executions for Problem 1
+//just using the edge predicates
+?- path3(a,d).
+true .
+
+?- path3(a,b).
+false.
+
+//using path2
+?- path3(a,b,d).
+false.
+
+?- path3(a,c,d).
+true .
+-------------------------------
+Sample Executions for Problem 2
+?- path(a,a).
+true .
+
+?- path(a,b).
+true .
+
+?- path(a,d).
+true .
+-------------------------------
+Sample Executions for Problem 3
+
+?- uncle(abhinav,anushikha).
+true .
+
+?- uncle(anushikha,abhinav).
+false.
+
+?- ancestor(jawahar, anushikha).
+true .
+
+?- ancestor(anushikha,jawahar).
+false.
+
+?- cousin(ahaana,anushikha).
+true .
+
+?- cousin(ahaana,jawahar).
+false.
+
+?- cousin(reva,ahaana).
+true .
+
+?- cousin(anushikha,ahaana).
+true .
+
+?- parent(jawahar,rajiv).
+true .
+
+?- parent(rajiv,jawahar).
+false.
+
+?- daughter(rajiv,anushikha).
+true .
+
+?- daughter(anushikha,rajiv).
+false.
+
+?- sibling(anushikha,reva).
+true .
+
+?- sibling(anushikha,rajiv).
+false.
+
+---------------------------------------------
+Sample Executions for Problem 4
+?- mem(1,[b,c,a,2,3,1]).
+true .
+
+?- mem(apple,[grape,mango,jackfruit]).
+false.
+
+?- mem(apple,[grape,apple,mango,jackfruit]).
+true .
+-------------------------------------------
+
